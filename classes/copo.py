@@ -29,7 +29,7 @@ class Copo(Recipiente):
         self.limpo = True
 
     def __repr__(self) -> str:
-        return f"Um copo vazio de {self.tamanho}ml" if self.conteudo == 0 else f"Um copo de {self.tamanho}ml contendo {self.conteudo}ml de {self.bebida}"
+        return f"Um copo vazio de {self.tamanho:.1f}ml" if self.conteudo == 0 else f"Um copo de {self.tamanho:.1f}ml contendo {self.conteudo:.1f}ml de {self.bebida}"
 
     def __str__(self) -> str:
-        return f"Um copo vazio de {self.tamanho}ml" if self.conteudo == 0 else f"Um copo de {self.tamanho}ml contendo {self.conteudo}ml de {self.bebida}"
+        return f"Um copo vazio de {self.tamanho:.1f}ml" if self.conteudo == 0 else f"Um copo de {self.tamanho:.1f}ml contendo {self.conteudo:.1f}ml de {self.bebida}"
